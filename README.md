@@ -49,7 +49,7 @@ This tool uses the **NOAA Analysis of Record for Calibration (AORC) v1.1** datas
 - **Period of Record**: 1979 – Present
 - **Source**: `s3://noaa-nws-aorc-v1-1-1km`
 
-For more information about AORC, visit the [NOAA AORC documentation](https://hydrology.nws.noaa.gov/aorc-historic/).
+For more information about AORC, visit the [NOAA AORC documentation](https://registry.opendata.aws/noaa-nws-aorc/).
 
 ---
 
