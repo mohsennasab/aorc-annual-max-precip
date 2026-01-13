@@ -1,0 +1,32 @@
+# AORC Annual Maximum Precipitation Analysis Tool
+# Requirements file for Python dependencies
+# Developed by Mohsen Tahmasebi Nasab, PhD
+
+# Core scientific computing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Geospatial libraries
+geopandas>=0.14.0
+shapely>=2.0.0
+rioxarray>=0.15.0
+affine>=2.4.0
+
+# NetCDF and Zarr handling
+xarray>=2023.6.0
+zarr>=2.16.0
+netCDF4>=1.6.0
+
+# Cloud storage access (AWS S3)
+s3fs>=2023.6.0
+fsspec>=2023.6.0
+aiobotocore>=2.5.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Excel file handling
+openpyxl>=3.1.0
+
+# Optional: For enhanced performance with dask
+dask>=2023.6.0
