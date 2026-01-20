@@ -21,6 +21,8 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 import geopandas as gpd
+import matplotlib
+matplotlib.use("Agg")  # Non-interactive backend; avoids Tkinter thread issues
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from matplotlib.colors import LinearSegmentedColormap
@@ -45,13 +47,13 @@ WATERSHED_PATH = r"D:\Projects\FFRD_Upper_Tennessee\GIS\Data\upper-tennessee_huc
 CONFIG_FILE = None  # "path/to/config.json"  # Set to None to use WATERSHED_PATH directly
 
 # Time period settings
-START_YEAR = 2000
+START_YEAR = 2007
 END_YEAR = 2024
 STORM_DURATION_HOURS = 72  # Rolling window size (24, 48, 72, etc.)
-ROLLING_THRESHOLD_INCHES = 3.0  # Threshold for mean rolling precipitation (inches)
+ROLLING_THRESHOLD_INCHES = 2.0  # Threshold for mean rolling precipitation (inches)
 
 # Output settings
-OUTPUT_DIR = r"D:\Projects\FFRD_Upper_Tennessee\AORC_Annual_Max_Precip\EventsOverThresholdOutput"
+OUTPUT_DIR = r"D:\Projects\FFRD_Upper_Tennessee\AORC_Annual_Max_Precip\Output_After_2007"
 CREATE_PLOTS = True
 PLOT_DPI = 300
 EXCEL_FILENAME = "aorc_events_over_thresh_summary.xlsx"
